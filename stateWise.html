@@ -19,9 +19,10 @@
         </div>
 
         <div id="header">
-            <h2 class="black-text mb-0 text-center font-weight-bold">COVID-19 stats in India</h2>
+            <h2 class="black-text mb-0 text-center font-weight-bold">COVID-19 stats in India (Statewise)</h2>
         </div>
         <div id="main">
+            <div id="div-hide" hidden>
             <div class="stats-cards row">
                 <div class="col-md-2">
                     <div class="card mdb-color lighten-2 text-center z-depth-2 view view-cascade gradient-card-header purple-gradient">
@@ -97,7 +98,10 @@
                     <canvas id="canvas"></canvas>
                 </div>
             </div><br/>
-            <div id="div-hide" hidden>
+        </div>
+        <div class="mapContainer">
+                <svg id="mapsvg" viewbox="0 0 700 650"></svg>
+            </div>
             <div id="stats-table" class="row">
                 <div class="stats-table-main col-md-12">
                         <div class="table-responsive">
@@ -130,10 +134,8 @@
             </div>
 
             <div id="tooltip"></div>
-            <div class="mapContainer">
-                <svg id="mapsvg" viewbox="0 0 700 650"></svg>
-            </div>
-        </div>
+            
+
         </div>
         <div id="footer-frame">
             <iframe src="./footer.html" width="100%"></iframe>
@@ -158,6 +160,15 @@
     </script>
 
      <script src="js/jquery.floatThead.min.js"></script>
-     
+     <script>        
+    $(function(){
+        var $table = $('#dtBasicExample');
+        $("#dtBasicExample").floatThead({
+            responsiveContainer: function($table){
+                return $table.closest(".table-responsive");
+            }
+        });        
+    });
+     </script>
      <script src="init.js"></script>
 </html>

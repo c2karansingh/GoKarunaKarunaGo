@@ -1,5 +1,5 @@
 var initFunc=function(){
-$("#nav").load("./header.html"); 
+$("#nav-frame").load("./header.html"); 
 //$("#footer").load("./footer.html"); 
 
 };

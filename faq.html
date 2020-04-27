@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GocoronaGo - COVID-19 stats in India</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="COVID-19 CoronaVirus stats in India">
+        <meta name="keywords" content="COVID,COVID-19,CoronaVirus,corona,gocorona,gocoronago,GocoronaGo,CoronaVirusStats,CoronaVirusStatistics,COVID-19stats,coronaliveupdates">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/mdb.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/datatables.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
+         <!-- Vendor Bundles CSS -->
+        <link rel="stylesheet" href="assets/css/vendor.bundle.css" >
+		           <!-- Custom Styles for this template -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!-- Fav Icon  -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    </head>
+<body>
+    <div id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+            <div class="brand row">
+                <div class="brand col-md-12">
+                    <a class="navbar-brand title" href="./index.html">GocoronaGo</a>
+                    <a id="nav-bar-github" href="https://github.com/iamrohitsuthar/gocoronago" target="_BLANK" style="color:#212529;">
+                        <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+                            <path stroke-width="0" fill="#212529" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="collapse navbar-collapse" id="basicExampleNav">  
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                            <a class="nav-link" href="#">Related Information
+                                <span class="sr-only">(current)</span>
+                            </a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./helplines.html">Helpline</a>
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="page-wraper">
+        
+        <div class="main-wrapper">
+            <section id="faq-section" class="faq-section section-lg shape-c mb-0">
+				<div class="container">
+                   <div class="row justify-content-center">
+                       <div class="col-lg-8 col-12">
+                           <div class="covid-head text-center">
+                                <span class="covid-top">CORONAVIRUS FAQ</span>
+                                <h2>Frequently Asked Questions</h2>
+                                <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience</p>
+                          </div>
+                       </div>
+                   </div>
+					<div class="row justify-content-between">
+						<div class="col-xl-3 col-lg-4">
+							<div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
+								<a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
+									<i class="mdi mdi-help-circle"></i> COVID -19
+								</a>
+								<a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
+									<i class="mdi mdi-account"></i> Prevention
+								</a>
+								<a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
+									<i class="mdi mdi-account-settings"></i> Symptoms
+								</a>
+								<a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false">
+									<i class="mdi mdi-heart"></i> Medical
+								</a>
+								<a href="#tab5" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab5" aria-selected="false">
+									<i class="mdi mdi-coin"></i> Others
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="tab-content tab-custom" id="faq-tab-content">
+								<div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+									<div class="accordion" id="accordion-tab-1">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-1-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">1. What is novel corona virus?</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
+												<div class="card-body">
+													<p>Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-1-heading-2">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">2. What is COVID-19?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
+												<div class="card-body">
+													<p>COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-1-heading-3">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">3. What is Quarantine?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
+												<div class="card-body">
+													<p>separates and restricts the movement of people who were exposed to a contagious disease to see if they become sick. These people may have been exposed to a disease and do not know it, or they may have the disease but do not show symptoms.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-1-heading-4">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">4. What is Isolation?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
+												<div class="card-body">
+													<p>The separation of a person or group of people known or reasonably believed to be infected with a communicable disease and potentially infectious from those who are not infected to prevent spread of the communicable disease. Isolation for public health purposes may be voluntary or compelled by federal, state, or local public health order</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2">
+									<div class="accordion" id="accordion-tab-2">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-2-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">1. Wash your hands frequently.</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
+												<div class="card-body">
+													<p>Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-2-heading-2">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">2. Maintain social distancing.</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2">
+												<div class="card-body">
+													<p>When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-2-heading-3">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">3. Avoid touching eyes, nose and mouth</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2">
+												<div class="card-body">
+													<p>Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-2-heading-4">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-4">4. Practice respiratory hygiene</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-2-content-4" aria-labelledby="accordion-tab-2-heading-4" data-parent="#accordion-tab-2">
+												<div class="card-body">
+													<p>Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3">
+									<div class="accordion" id="accordion-tab-3">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-3-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">What are the symptoms of COVID-19?</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
+												<div class="card-body">
+													<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4">
+									<div class="accordion" id="accordion-tab-4">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-4-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">Is there any treatment of coronavirus disease (COVID-19)?</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
+												<div class="card-body">
+													<p>There is no specific medicine to prevent or treat coronavirus disease (COVID-19). People may need supportive care to help them breathe.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-4-heading-2">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-2" aria-expanded="false" aria-controls="accordion-tab-4-content-2">Self care</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-4-content-2" aria-labelledby="accordion-tab-4-heading-2" data-parent="#accordion-tab-4">
+												<div class="card-body">
+													<p>If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms if you:</p>
+													<ul>
+														<li>- Rest and Sleep</li>
+														<li>- Weep Warm</li>
+														<li>- Drink Plenty of Liquids</li>
+														<li>- Use a room humidifier or take a hot shower to help ease a Sore Throat and Cough</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-4-heading-3">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-3" aria-expanded="false" aria-controls="accordion-tab-4-content-3">Medical treatments</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-4-content-3" aria-labelledby="accordion-tab-4-heading-3" data-parent="#accordion-tab-4">
+												<div class="card-body">
+													<p>If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in advance and tell your health provider of any recent travel or recent contact with travelers.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="tab5">
+									<div class="accordion" id="accordion-tab-5">
+										<div class="card">
+											<div class="card-header" id="accordion-tab-5-heading-1">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-1" aria-expanded="false" aria-controls="accordion-tab-5-content-1">Is there anything I should not do?</button>
+												</h5>
+											</div>
+											<div class="collapse show" id="accordion-tab-5-content-1" aria-labelledby="accordion-tab-5-heading-1" data-parent="#accordion-tab-5">
+												<div class="card-body">
+													<p>The following measures ARE NOT effective against COVID-2019 and can be harmful:</p>
+													<ul>
+														<li>- Smoking</li>
+														<li>- Wearing multiple masks</li>														
+													</ul>
+													<p>In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-5-heading-2">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-2" aria-expanded="false" aria-controls="accordion-tab-5-content-2">Is the source of the coronavirus causing COVID-19 known?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-5-content-2" aria-labelledby="accordion-tab-5-heading-2" data-parent="#accordion-tab-5">
+												<div class="card-body">
+													<p>Currently, the source of SARS-CoV-2, the coronavirus (CoV) causing COVID-19 is unknown. All available evidence suggests that SARS-CoV-2 has a natural animal origin and is not a constructed virus. SARS-CoV-2 virus most probably has its ecological reservoir in bats. SARS-CoV-2, belongs to a group of genetically related viruses, which also include SARS-CoV and a number of other CoVs isolated from bats populations. MERS-CoV also belongs to this group, but is less closely related.</p>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="accordion-tab-5-heading-3">
+												<h5>
+													<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-3" aria-expanded="false" aria-controls="accordion-tab-5-content-3">Is COVID-19 airborne?</button>
+												</h5>
+											</div>
+											<div class="collapse" id="accordion-tab-5-content-3" aria-labelledby="accordion-tab-5-heading-3" data-parent="#accordion-tab-5">
+												<div class="card-body">
+													<p>The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or speaks. These droplets are too heavy to hang in the air. They quickly fall on floors or surfaces. </p>
+													<p>You can be infected by breathing in the virus if you are within 1 metre of a person who has COVID-19, or by touching a contaminated surface and then touching your eyes, nose or mouth before washing your hands.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!--End Section-->
+        </div>
+        
+    </div>
+    
+
+    <div id="footer" class="blue-gradient">
+        <p class="white-text mb-0 text-center" style="font-size: 1.3rem;">Made with<svg id="i-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path stroke-width="0" fill="#f44336" d="M4 16 C1 12 2 6 7 4 12 2 15 6 16 8 17 6 21 2 26 4 31 6 31 12 28 16 25 20 16 28 16 28 16 28 7 20 4 16 Z" />
+        </svg> by <a href="https://iamrohitsuthar.github.io" target="_BLANK" style="text-decoration: none;color: white">Rohit Suthar</a></p>
+        <div class="text-center">
+            <a href="https://github.com/iamrohitsuthar/gocoronago" target="_BLANK" style="color:#212529;">
+            <svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+                <path stroke-width="0" fill="#212529" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+            </svg>
+            </a>
+            <a href="https://www.instagram.com/iamrohitsuthar/" target="_BLANK" style="color:#212529;">
+            <svg role="i-instagram" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                <path fill="#212529" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+            </svg>
+            </a>
+            <a href="https://twitter.com/iamrohitsuthar" target="_BLANK" style="color:#212529;">
+            <svg id="i-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36">
+                <path stroke-width="0" fill="#212529" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z" />
+            </svg>
+            </a>
+        </div>
+        <p class="white-text mb-0 text-center" style="padding-top: 10px !important;">Checkout <a href="https://github.com/amodm/api-covid19-in" target="_BLANK" style="text-decoration: none;color: white">COVID-19 Stats API</a>
+        <span class="pl-3"></span>Contributor : <a href="http://harshsaglani.byethost13.com" target="_BLANK" style="text-decoration: none;color: white"> Harsh Saglani</a></p>
+    </div><!-- .page-wraper  -->
+    
+    <!-- Vendor Bundles Js -->
+    <script src="assets/js/vendor.bundle.js"></script>
+	
+    <!-- Scripts for Progress -->
+    <script src="assets/js/progress.html"></script>
+	
+    <!-- Custom Scripts for this template -->
+    <script src="assets/js/script.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+</body>
+
+<!-- Mirrored from marveltheme.com/tf/html/covids/covids/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2020 12:48:23 GMT -->
+</html>

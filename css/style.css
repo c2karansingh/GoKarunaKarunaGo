@@ -388,3 +388,6 @@ hr {
 .title {
     font-family: 'Raleway', sans-serif;
 }
+iframe{
+    overflow:hidden;
+}

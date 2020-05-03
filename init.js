@@ -47,6 +47,9 @@ document.getElementById("nav-frame").innerHTML=`<div id="nav">
                                 <li class="nav-item">
                                 <a class="nav-link" href="./helplines.html">Helpline</a>
                                 </li> 
+                                <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/c2karansingh/GoKarunaKarunaGo/blob/master/README.md">About us</a>
+                                </li> 
                                 
                                  
                                   

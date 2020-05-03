@@ -9,7 +9,7 @@ The contributors are:
 * [Ridham Dave](https://github.com/ridhamdave)
 * [Dhrumin Thakkar](https://github.com/Dhruminthkk)
 * [Meshwa Patel](https://github.com/patelmeshwa99)
-* [Heta Bhayani](https://github.com/hetabhayani
+* [Heta Bhayani](https://github.com/hetabhayani)
 
 ### Acknowledgements
 We are eternally grateful to our mentor, [Dr. Jitendra Bhatia](https://scholar.google.co.in/citations?user=TxfcKsEAAAAJ&hl=en&oi=ao) who guided us in creating the application and pointed out the issues during its development.

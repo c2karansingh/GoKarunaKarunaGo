@@ -1,5 +1,5 @@
 # COVID-19 Tracker
-This website shows the latest COVID-19 stats in india. We collect data from the following [APIs](https://github.com/amodm/api-covid19-in)
+This website shows the live COVID-19 stats in india. We collect data from the following [APIs](https://github.com/amodm/api-covid19-in). All of the data is fetched through AJAX requests using JQuery to remove the necessity of a server.
 
 ### Who are we ?
 We are a group of computer science majors who want to bring forward a dashboard for the convenience of the country's citizens. We built this dashboard voluntarily as we believe that in these testing times, it is important for everyone to commit whatever they can to the betterment of the nation.
